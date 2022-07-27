@@ -38,11 +38,9 @@ let brittanisBirthYear = 1986;
 
 if (brittanisAge > amysAge){
   console.log("Brittani is older.")
-}
-if (amysAge > brittanisAge){
+} else if (amysAge > brittanisAge){
   console.log("Amy is older.")
-}
-if (amysAge === brittanisAge){
+} else {
   console.log("Amy and Brittani are the same age.")
 }
 
@@ -61,8 +59,7 @@ let brittanisBirthYear = 1986;
 
 if (brittanisBirthYear === amysBirthYear){
   console.log("Amy & Brittani were born in the same year")
-}
-if (brittanisBirthYear !== amysBirthYear){
+} else {
   console.log("Amy and Brittani were not born in the same year")
 }
 
@@ -83,24 +80,21 @@ let rain = true;
 
 if (temperature >= 80 && rain === true){
     console.log("Wear a t-shirt and bring an umbrella")
-}
-if (temperature >= 60 && temperature <= 79 && rain ===true){
+} else if (temperature >= 60 && temperature <= 79 && rain ===true){
     console.log("Wear a rain-jacket")
-}
-if (temperature <= 59 && rain === true){
+} else if (temperature <= 59 && rain === true){
     console.log("Wear a jacket and bring an umbrella")
-}
-if (temperature >= 80 && rain === false){
+} else if (temperature >= 80 && rain === false){
     console.log("Wear a t-shirt")
-}
-if (temperature >= 60 && temperature <= 79 && rain === false){
+} else if (temperature >= 60 && temperature <= 79 && rain === false){
     console.log("Wear a sweater")
-}
-if (temperature <= 59 && rain === false){
+} else {
     console.log("Wear a jacket")
 }
 
 ////////// PROBLEM 5 //////////
+
+
 
 /*
   Create a for-loop that runs 10 times, and on each iteration logs the word 'hello'.
@@ -108,7 +102,9 @@ if (temperature <= 59 && rain === false){
 
 //CODE HERE
 
-
+for (i = 0; i < 10; i++){
+  console.log("hello")
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -118,6 +114,10 @@ if (temperature <= 59 && rain === false){
 
 //CODE HERE
 
+for (i = 1; i <=10; i++){
+  console.log(i)
+}
+
 ////////// PROBLEM 7 //////////
 
 /*
@@ -126,6 +126,9 @@ if (temperature <= 59 && rain === false){
 
 //CODE HERE
 
+for (i = 10; i >= 0; i--){
+  console.log(i)
+}
 
 ////////// PROBLEM 8 //////////
 
@@ -137,6 +140,14 @@ let passingScore = 7;
 */
 
 //CODE HERE
+
+let score = 0;
+let passingScore = 7;
+
+while (score < passingScore){
+  console.log("Your score is not high enough")
+  score += 1
+}
 
 ////////// INTERMEDIATE PROBLEMS //////////
 
@@ -162,3 +173,12 @@ let z = 5;
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+
+let z = 5
+
+while(z > 0) {
+    for(x = z; x > 0; x--) {
+      console.log(x)
+    }
+    z = z - 1
+  }
